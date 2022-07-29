@@ -9,7 +9,6 @@
         html에서는 /css로 시작하고 php에서는 /web_p2/css처럼
         루트 디렉토리부터 시작해야함
     -->
-    <title>header</title>
 </head>
 <body>
     <div class="h_container">
