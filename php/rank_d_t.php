@@ -14,10 +14,13 @@
 </head>
 <body>
     <div class="container">
-        <div class="main1" id="item">a</div>
+        <div class="main1" id="item">
+            <div class="c_img"><img src="/web_p2/img/Hawaiian shirt.jpg"></div>
+        </div>
         <div class="main2" id="item">
             <div class="detail">
-                <div>a</div>
+                <div>
+                </div>
             </div>
             <div class="detail">
                 <div>b</div>

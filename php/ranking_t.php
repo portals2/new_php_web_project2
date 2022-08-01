@@ -16,31 +16,31 @@
         <!-- 랭킹 1층 이미지 -->
         <div class="manu1" id="item">
             <div class="img_manu">
-                <div class="c_img"><img src="/web_p2/img/Hawaiian shirt.jpg"></div>
-                <div class="explan">하와이안 피자1</div>
+                <a href="/web_p2/php/rank_d_t.php" class="c_img"><div><img src="/web_p2/img/Hawaiian shirt.jpg"></div></a>
+                <a href="/web_p2/php/rank_d_t.php" class="explan"><div>하와이안 피자1</div></a>
             </div>
             <div class="img_manu">
-                <div class="c_img"><img src="/web_p2/img/pp.png"></div>
-                <div class="explan">피자1</div>
+                <a href="" class="c_img"><div><img src="/web_p2/img/pp.png"></div></a>
+                <a href="" class="explan"><div>피자1</div></a>
             </div>
             <div class="img_manu"> 
-                <div class="c_img"><img src="/web_p2/img/P.png"></div>
-                <div class="explan">피자2</div>
+                <a href="" class="c_img"><div><img src="/web_p2/img/P.png"></div></a>
+                <a href="" class="explan"><div>피자2</div></a>
             </div>
         </div>
         <!-- 랭킹 2층 이미지 -->
         <div class="manu2" id="item">
             <div class="img_manu">
-                <div class="c_img"><img src="/web_p2/img/pp.png"></div>
-                <div class="explan">피자3</div>
+                <a href="" class="c_img"><div><img src="/web_p2/img/pp.png"></div></a>
+                <a href="" class="explan"><div>피자3</div></a>
             </div>
             <div class="img_manu">
-                <div class="c_img"><img src="/web_p2/img/Hawaiian shirt.jpg"></div>
-                <div class="explan">하와이안 피자2</div>
+                <a href="" class="c_img"><div><img src="/web_p2/img/Hawaiian shirt.jpg"></div></a>
+                <a href="" class="explan"><div>하와이안 피자2</div></a>
             </div>
             <div class="img_manu">
-                <div class="c_img"><img src="/web_p2/img/pp.png"></div>
-                <div class="explan">피자4</div>
+                <a href="" class="c_img"><div><img src="/web_p2/img/pp.png"></div></a>
+                <a href="" class="explan"><div>피자4</div></a>
             </div>
         </div>
     </div>

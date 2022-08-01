@@ -1,3 +1,16 @@
+<?php
+    session_start();
+    if (isset($_SESSION["userid"])) 
+        $userid = $_SESSION["userid"];
+    else 
+        $userid = "";
+        
+    if (isset($_SESSION["username"])) 
+        $username = $_SESSION["username"];
+    else 
+        $username = "";
+?>	
+
 <!-- include연동확인 및 연속쌓기 확인, php작동확인 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -15,11 +28,25 @@
         <div class="header" id="item">
             <a class="symbol" href=""><img src="/web_p2/img/P.png" alt="asd"></a>
             <div class="menu">
-                    <a href="" class="but">홈</a>
-                    <a href="" class="but">랭킹</a>
-                    <a href="" class="but">커뮤니티</a>
-                    <a href="" class="but">로그인</a>
+                <a href="" class="but">홈</a>
+                <a href="" class="but">랭킹</a>
+                <?php
+                    if(!$userid) {
+                ?>                
+                                <a href="/web_p2/php/logins/form.php" class="but">회원가입</a>
+                                <a href="/web_p2/php/logins/login_form.php" class="but">로그인</a>
+                <?php
+                    } else {
+                                $logged = $username."(".$userid.")";
+                ?> 
+                                <a href="" class="but">마이페이지</a>
+                                <a href="/web_p2/php/logins/logout.php" class="but">로그아웃</a> 
+                <?php
+                    }
+                ?>
             </div>
+
+
         </div>
         <!-- 메인1 -->
         <div class="main1" id="item">
