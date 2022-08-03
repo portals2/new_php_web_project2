@@ -1,20 +1,20 @@
-<?php 
-    include "C:/xampp/htdocs/web_p2/php/header_t.php";
-?>
-
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/web_p2/css/commu.css">
-    <script src="/web_p2/js/move_box.js"></script>
-    <title>commu</title>
+<html>
+<head> 
+<meta charset="utf-8">
+<title>PHP+MySQL 입문</title>
+<link rel="stylesheet"  href="/web_p2/css/board.css">
 </head>
-<body>
-    <div class="container">
+<body> 
+	<h2>회원 게시판 > 목록보기</h2>
+	<ul class="board_list">
+		<li>
+			<span class="col1">번호</span>
+			<span class="col2">제목</span>
+			<span class="col3">글쓴이</span>
+			<span class="col4">첨부</span>
+			<span class="col5">등록일</span>
+		</li>
 <?php
 	include "C:/xampp/htdocs/web_p2/php/board/session.php"; 	// 세션 처리
 
@@ -50,60 +50,54 @@
 	  	$name        = $row["name"];		// 이름
 	  	$subject     = $row["subject"];		// 제목
       	$regist_day  = $row["regist_day"]; 	// 작성일
-        // $file_image = $row["file_name"]
 		if ($row["file_name"])
-      		$file_image = "<img src='/web_p2/img/".$row["file_name"]."'>";
+      		$file_image = "<img src='./file.png'>";
       	else
       		$file_image = " ";		  
 ?>
-    <div class="img_manu">
-		<div class="c_img">
-			<?=$file_image?>
-		</div>	
-		<div class="explan">
-			<a href="view.php?num=<?=$num?>&page=<?=$page?>">
-				<span class="col1">제목&nbsp;</span>	
-				<span class="col2"><?=$subject?></span>
-				<span class="col3"><?=$name?></span>
-				<span class="col4">날자&nbsp;</span>
-				<span class="col5"><?=$regist_day?></span>
-			</a>
-        </div>	
-    </div>
+		<li>
+			<span class="col1"><?=$number?></span>		
+			<span class="col2"><a href="view.php?num=<?=$num?>&page=<?=$page?>"><?=$subject?></a></span>
+			<span class="col3"><?=$name?></span>
+			<span class="col4"><?=$file_image?></span>
+			<span class="col5"><?=$regist_day?></span>
+		</li>	
 <?php
    	   $number--;
    	}
    	mysqli_close($con);
 ?>
-        <button class="scroll-top" id="js-button" onclick="location.href='/web_p2/php/board/form.php'">
-            <i class="fa fa-chevron-up" aria-hidden="true">글쓰기</i>
-        </button>
-    </div>
+	    </ul>
+
 <!-- 페이지 번호 매김 -->
-<div class="c_num">
+	<ul class="page_num"> 	
 <?php
 	if ($total_page>=2 && $page >= 2) {
 		$new_page = $page-1;
-		echo "<a href='/web_p2/php/commu.php?page=$new_page'>◀ 이전</a>";
+		echo "<li><a href='/web_p2/php/commu_t.php?page=$new_page'>◀ 이전</a> </li>";
 	}		
 	else 
-		echo "&nbsp;";
+		echo "<li>&nbsp;</li>";
 
    	// 게시판 목록 하단에 페이지 링크 번호 출력
    	for ($i=1; $i<=$total_page; $i++) {
 		if ($page == $i)     // 현재 페이지 번호 링크 안함
-			echo "<b> $i </b>";
+			echo "<li><b> $i </b></li>";
 		else
-			echo "<a href='/web_p2/php/commu.php?page=$i'> $i </a>";
+			echo "<li> <a href='/web_p2/php/commu_t.php?page=$i'> $i </a> <li>";
    	}
    	if ($total_page>=2 && $page != $total_page)	{
 		$new_page = $page+1;	
-		echo " <a href='/web_p2/php/commu.php?page=$new_page'>다음 ▶</a>";
+		echo "<li> <a href='/web_p2/php/commu_t.php?page=$new_page'>다음 ▶</a> </li>";
 	}
 	else 
-		echo "&nbsp;";		
+		echo "<li>&nbsp;</li>";		
 ?>
-<!-- 페이지 번호 매김 끝 -->
-</div>
+	</ul> <!-- 페이지 번호 매김 끝 -->
+
+	<ul class="buttons">
+		<li><button onclick="location.href='/web_p2/php/commu_t.php?page=<?=$page?>'">목록</button></li>
+		<li><button onclick="location.href='form.php'">글쓰기</button></li>
+	</ul>		
 </body>
 </html>

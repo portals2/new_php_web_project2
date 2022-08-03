@@ -69,13 +69,6 @@
     display: flex;
     padding: 10px;
 }
-/*컨테이너 main1의 크기에 맞추어 100%가 맞춰짐*/
-#main1 img{ 
-    width: 100%;
-}
-#main2 img{
-    width: 100%;
-}
 /* 자식 */
 #main1, #main2{ 
     display: flex;
@@ -83,5 +76,13 @@
     align-items:center;
     justify-content: center;
     flex: 1 0;
+}
+
+/*컨테이너 main1의 크기에 맞추어 100%가 맞춰짐*/
+#main1 img{ 
+    width: 100%;
+}
+#main2 img{
+    width: 100%;
 }
 

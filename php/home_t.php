@@ -29,7 +29,7 @@
             <a class="symbol" href=""><img src="/web_p2/img/P.png" alt="asd"></a>
             <div class="menu">
                 <a href="" class="but">홈</a>
-                <a href="" class="but">랭킹</a>
+                <a href="/web_p2/php/ranking_t.php" class="but">랭킹</a>
                 <?php
                     if(!$userid) {
                 ?>                

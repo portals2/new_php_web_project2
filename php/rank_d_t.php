@@ -15,18 +15,21 @@
 <body>
     <div class="container">
         <div class="main1" id="item">
-            <div class="c_img"><img src="/web_p2/img/Hawaiian shirt.jpg"></div>
+            <div class="c_img">
+                <a>
+                    <img src="/web_p2/img/Hawaiian shirt.jpg">
+                </a>
+            </div>
         </div>
         <div class="main2" id="item">
             <div class="detail">
-                <div>
-                </div>
+                <div>제품명 : 하와이안 피자</div>
             </div>
             <div class="detail">
-                <div>b</div>
+                <div>가격 : 1,000,000,000 $</div>
             </div>
             <div class="detail">
-                <div class="bb">button</div>
+                <div class="bb">쿠폰</div>
             </div>
             <div class="detail">
                 <div class="bb">장바구니 담기</div>

@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/web_p2/css/commu_d.css">
-    <title>rank_detail</title>
+    <title>commu_d</title>
 </head>
 <body>
     <div class="container">

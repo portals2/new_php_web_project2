@@ -53,9 +53,9 @@
         </div>
         <div class="sec_menu" id="h_item">
             <div class="menu2">
-                <a href="" class="but">홈</a>
-                <a href="" class="but">랭킹</a>
-                <a href="" class="but">커뮤니티</a>
+                <a href="/web_p2/php/home_t.php" class="but">홈</a>
+                <a href="/web_p2/php/ranking_t.php" class="but">랭킹</a>
+                <a href="/web_p2/php/commu.php" class="but">커뮤니티</a>
             </div>
         </div>
         <div class="rank" id="h_item">

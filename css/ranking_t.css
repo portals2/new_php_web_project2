@@ -21,11 +21,14 @@
 }
 .manu1, .manu2{
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    padding: 10px;
+
 }
 .img_manu{
-    border: 1px solid black;
+    display: flex;
+    border: 1px solid rgb(0, 0, 0);
+    align-items:center;
+    justify-content: center;
     flex: 1 0;
     margin: 5px;
     display: grid;
@@ -36,10 +39,14 @@
     grid-row: 1 / 4;
 }
 .explan{
+    display: flex;
     background-color: brown;
     grid-row: 4 / 5;
+    align-self: stretch;
+    justify-content: center;
+    align-items:center;
 }
-img{
+.img_manu img{
     width: 100%;
     height:300px;
 }
