@@ -39,8 +39,6 @@
     grid-column: 1 / 5;
 	grid-row: 2/ 4;
 }
-
-
 .bb{
     display: flex;
     border: 1px solid black;
@@ -48,4 +46,19 @@
     height: 30%;
     justify-content:center;
     align-items:center;
+}
+.main1{
+    display: flex;
+    padding: 10px;
+}
+.c_img{
+    display: flex;
+    border: 1px solid rgb(0, 0, 0);
+    align-items:center;
+    justify-content: center;
+    flex: 1 0;
+}
+/* <?=$file_image?> 으로 불러온 이미지도 img의 정용을 받는다. */
+.c_img img{
+    width: 100%;
 }

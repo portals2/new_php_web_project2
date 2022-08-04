@@ -58,17 +58,20 @@
 ?>
     <div class="img_manu">
 		<div class="c_img">
-			<?=$file_image?>
+			<a href="/web_p2/php/commu_d_t.php?num=<?=$num?>&page=<?=$page?>">
+				<?=$file_image?>
+			</a>
 		</div>	
-		<div class="explan">
-			<a href="view.php?num=<?=$num?>&page=<?=$page?>">
+		<a href="/web_p2/php/commu_d_t.php?num=<?=$num?>&page=<?=$page?>" class="explan">
+	
+			
 				<span class="col1">제목&nbsp;</span>	
 				<span class="col2"><?=$subject?></span>
 				<span class="col3"><?=$name?></span>
 				<span class="col4">날자&nbsp;</span>
 				<span class="col5"><?=$regist_day?></span>
-			</a>
-        </div>	
+			
+		</a>	
     </div>
 <?php
    	   $number--;
