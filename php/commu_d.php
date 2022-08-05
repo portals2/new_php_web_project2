@@ -1,5 +1,5 @@
 <?php 
-    include "C:/xampp/htdocs/web_p2/php/header_t.php";
+    include "../php/header_t.php";
 ?>
 
 
@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/web_p2/css/commu_d.css">
+    <link rel="stylesheet" href="../css/commu_d.css">
     <title>commu_d</title>
 </head>
 <body>

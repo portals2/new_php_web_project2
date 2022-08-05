@@ -1,5 +1,5 @@
 <?php 
-    include "C:/xampp/htdocs/web_p2/php/header_t.php";
+    include "../php/header_t.php";
     
     $num  = $_GET["num"];
 	$page  = $_GET["page"];
@@ -20,7 +20,7 @@
 	$content = str_replace("\n", "<br>", $content);			// 줄바꿈 변환
 
 	if ($row["file_name"])
-		$file_image = "<img src='/web_p2/img/".$row["file_name"]."'>";
+		$file_image = "<img src='../img/".$row["file_name"]."'>";
 	else
 		$file_image = " ";	
 ?>
@@ -32,12 +32,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/web_p2/css/commu_d.css">
+    <link rel="stylesheet" href="../css/commu_d.css">
     <title>commu_d_ttt</title>
     <script>
         function check_password(mode, num) {
             // mode : modify(수정) delete(삭제), num : 레코드 번호
-            window.open("/web_p2/php/board/password_form.php?mode="+mode+"&num="+num,
+            window.open("../php/board/password_form.php?mode="+mode+"&num="+num,
             "pass_check",
             "left=700,top=300,width=550,height=150,scrollbars=no,resizable=yes");
     }
@@ -62,7 +62,7 @@
             </div>
         </div>
     </div>
-    <button onclick="location.href='/web_p2/php/commu.php?page=<?=$page?>'">목록보기</button>
-    <button onclick="location.href='/web_p2/php/board/delete.php?num=<?=$num?>&page=<?=$page?>'">삭제하기</button>
+    <button onclick="location.href='../php/commu.php?page=<?=$page?>'">목록보기</button>
+    <button onclick="location.href='../php/board/delete.php?num=<?=$num?>&page=<?=$page?>'">삭제하기</button>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <?php 
-    include "C:/xampp/htdocs/web_p2/php/header_t.php";
+    include "../php/header_t.php";
 ?>
 
 <!DOCTYPE html>
@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/web_p2/css/ranking_t.css">
+    <link rel="stylesheet" href="../css/ranking_t.css">
     <title>ranking</title>
 </head>
 <body>
@@ -16,16 +16,16 @@
         <!-- 랭킹 1층 이미지 -->
         <div class="manu1" id="item">
             <div class="img_manu">
-                <a href="/web_p2/php/rank_d_t.php" class="c_img">
-                    <img src="/web_p2/img/Hawaiian shirt.jpg">
+                <a href="../php/rank_d_t.php" class="c_img">
+                    <img src="../img/Hawaiian shirt.jpg">
                 </a>
-                <a href="/web_p2/php/rank_d_t.php" class="explan">
+                <a href="../php/rank_d_t.php" class="explan">
                     <div>하와이안 피자1</div>
                 </a>
             </div>
             <div class="img_manu">
                 <a href="" class="c_img">
-                    <img src="/web_p2/img/pp.png">
+                    <img src="../img/pp.png">
                 </a>
                 <a href="" class="explan">
                     <div>피자1</div>
@@ -33,7 +33,7 @@
             </div>
             <div class="img_manu"> 
                 <a href="" class="c_img">
-                    <img src="/web_p2/img/P.png">
+                    <img src="../img/P.png">
                 </a>
                 <a href="" class="explan">
                     <div>피자2</div>
@@ -44,7 +44,7 @@
         <div class="manu2" id="item">
             <div class="img_manu">
                 <a href="" class="c_img">
-                    <img src="/web_p2/img/pp.png">
+                    <img src="../img/pp.png">
                 </a>
                 <a href="" class="explan">
                     <div>피자3</div>
@@ -52,7 +52,7 @@
             </div>
             <div class="img_manu">
                 <a href="" class="c_img">
-                    <img src="/web_p2/img/Hawaiian shirt.jpg">
+                    <img src="../img/Hawaiian shirt.jpg">
                 </a>
                 <a href="" class="explan">
                     <div>하와이안 피자2</div>
@@ -60,7 +60,7 @@
             </div>
             <div class="img_manu">
                 <a href="" class="c_img">
-                    <img src="/web_p2/img/pp.png">
+                    <img src="../img/pp.png">
                 </a>
                 <a href="" class="explan">
                     <div>피자4</div>

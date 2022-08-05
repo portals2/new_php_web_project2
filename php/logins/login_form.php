@@ -2,9 +2,9 @@
 <html>
 <head> 
 <meta charset="utf-8">
-<title>PHP+MySQL 입문</title>
-<link rel="stylesheet" type="text/css" href="/web_p2/css/logins.css">
-<script>
+<title>login</title>
+<link rel="stylesheet" href="/p1/js/web_p2/css/logins.css">
+<script> 
 	function check_input()
 	{
     	if (!document.login.id.value) {

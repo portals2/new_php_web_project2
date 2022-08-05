@@ -1,5 +1,5 @@
 <?php 
-    include "C:/xampp/htdocs/web_p2/php/header_t.php";
+    include "../php/header_t.php";
 ?>
 
 
@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/web_p2/css/rank_d_t.css">
+    <link rel="stylesheet" href="../css/rank_d_t.css">
     <title>rank_detail</title>
 </head>
 <body>
@@ -17,7 +17,7 @@
         <div class="main1" id="item">
             <div class="c_img">
                 <a>
-                    <img src="/web_p2/img/Hawaiian shirt.jpg">
+                    <img src="../img/Hawaiian shirt.jpg">
                 </a>
             </div>
         </div>

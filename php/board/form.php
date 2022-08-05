@@ -1,12 +1,12 @@
 <?php
-		include "C:/xampp/htdocs/web_p2/php/board/session.php"; 	// 세션 처리
+		include "../php/board/session.php"; 	// 세션 처리
 ?>
 <!DOCTYPE html>
 <html>
 <head> 
 <meta charset="utf-8">
 <title>PHP+MySQL 입문</title>
-<link rel="stylesheet" href="/web_p2/css/board.css">
+<link rel="stylesheet" href="../css/board.css">
 <script>
   	function check_input() {	
       	if (!document.board.subject.value) {	// 제목 체크

@@ -1,5 +1,5 @@
 <?php 
-    include "C:/xampp/htdocs/web_p2/php/header_t.php";
+    include "../php/header_t.php";
 ?>
 
 
@@ -9,14 +9,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/web_p2/css/commu.css">
-    <script src="/web_p2/js/move_box.js"></script>
+    <link rel="stylesheet" href="../css/commu.css">
+    <script src="../js/move_box.js"></script>
     <title>commu</title>
 </head>
 <body>
     <div class="container">
 <?php
-	include "C:/xampp/htdocs/web_p2/php/board/session.php"; 	// 세션 처리
+	include "../php/board/session.php"; 	// 세션 처리
 
 	if (isset($_GET["page"]))
 		$page = $_GET["page"];
@@ -52,17 +52,17 @@
       	$regist_day  = $row["regist_day"]; 	// 작성일
         // $file_image = $row["file_name"]
 		if ($row["file_name"])
-      		$file_image = "<img src='/web_p2/img/".$row["file_name"]."'>";
+      		$file_image = "<img src='../img/".$row["file_name"]."'>";
       	else
       		$file_image = " ";		  
 ?>
     <div class="img_manu">
 		<div class="c_img">
-			<a href="/web_p2/php/commu_d_t.php?num=<?=$num?>&page=<?=$page?>">
+			<a href="../php/commu_d_t.php?num=<?=$num?>&page=<?=$page?>">
 				<?=$file_image?>
 			</a>
 		</div>	
-		<a href="/web_p2/php/commu_d_t.php?num=<?=$num?>&page=<?=$page?>" class="explan">
+		<a href="../php/commu_d_t.php?num=<?=$num?>&page=<?=$page?>" class="explan">
 	
 			
 				<span class="col1">제목&nbsp;</span>	
@@ -78,7 +78,7 @@
    	}
    	mysqli_close($con);
 ?>
-        <button class="scroll-top" id="js-button" onclick="location.href='/web_p2/php/board/form.php'">
+        <button class="scroll-top" id="js-button" onclick="location.href='../php/board/form.php'">
             <i class="fa fa-chevron-up" aria-hidden="true">글쓰기</i>
         </button>
     </div>
@@ -87,7 +87,7 @@
 <?php
 	if ($total_page>=2 && $page >= 2) {
 		$new_page = $page-1;
-		echo "<a href='/web_p2/php/commu.php?page=$new_page'>◀ 이전</a>";
+		echo "<a href='../php/commu.php?page=$new_page'>◀ 이전</a>";
 	}		
 	else 
 		echo "&nbsp;";
@@ -97,11 +97,11 @@
 		if ($page == $i)     // 현재 페이지 번호 링크 안함
 			echo "<b> $i </b>";
 		else
-			echo "<a href='/web_p2/php/commu.php?page=$i'> $i </a>";
+			echo "<a href='../php/commu.php?page=$i'> $i </a>";
    	}
    	if ($total_page>=2 && $page != $total_page)	{
 		$new_page = $page+1;	
-		echo " <a href='/web_p2/php/commu.php?page=$new_page'>다음 ▶</a>";
+		echo " <a href='../php/commu.php?page=$new_page'>다음 ▶</a>";
 	}
 	else 
 		echo "&nbsp;";		

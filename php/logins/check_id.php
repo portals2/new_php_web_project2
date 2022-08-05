@@ -15,7 +15,7 @@
       echo("아이디를 입력해 주세요!");
    }
    else {
-      $con = mysqli_connect("localhost", "user", "12345", "sample");
+      include "check_id.php"
       $sql = "select * from members where id='$id'";
       $result = mysqli_query($con, $sql);
 

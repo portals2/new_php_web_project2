@@ -2,7 +2,8 @@
 	$num  = $_GET["num"];
 	$page  = $_GET["page"];
 
-	$con = mysqli_connect("localhost", "user", "12345", "sample");	// DB 접속
+	// $con = mysqli_connect("localhost", "user", "12345", "sample");	// DB 접속
+	include "check_id.php"
 	$sql = "select * from memberboard where num=$num";	// 레코드 검색
 	$result = mysqli_query($con, $sql);			// SQL 명령 실행
 
@@ -18,7 +19,7 @@
 	$content = str_replace("\n", "<br>", $content);			// 줄바꿈 변환
 
 	if ($row["file_name"])
-		$file_image = "<img src='/web_p2/img/".$row["file_name"]."'>";
+		$file_image = "<img src='../img/".$row["file_name"]."'>";
 	else
 		$file_image = " ";	
 ?>	

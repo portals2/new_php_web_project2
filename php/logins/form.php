@@ -3,7 +3,7 @@
 <head> 
 <meta charset="utf-8">
 <title>로그인</title>
-<link rel="stylesheet" href="/web_p2/css/logins.css">
+<link rel="stylesheet" href="/p1/js/web_p2/css/logins.css">
 <script>
     // 안 귀찮으면 닉네임 중복도 구현
    function check_input() {

@@ -63,7 +63,7 @@
 		$copied_file_name = "";
 	}
 
-    $con = mysqli_connect("localhost", "user", "12345", "sample");
+    include "check_id.php"
 	$sql = "insert into memberboard (id, name, subject, content, regist_day, ";
 	$sql .= "file_name, file_type, file_copied) ";
 	$sql .= "values('$userid', '$username', '$subject', '$content', '$regist_day', ";
@@ -75,6 +75,6 @@
 
 	// 목록 페이지로 이동
 	echo "<script>
-	    location.href = '/web_p2/php/commu.php';
+	    location.href = '../php/commu.php';
 	   </script>";
 ?>
