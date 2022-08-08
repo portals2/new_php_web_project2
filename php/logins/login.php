@@ -3,7 +3,7 @@
     $pass = $_POST["pass"];
 
     // $con = mysqli_connect("localhost", "user", "12345", "sample");
-    include "check_id.php"
+    include "../logins/db_con.php";
     $sql = "select * from members where id='$id'";
     // 사용자의 id값 저장
     $result = mysqli_query($con, $sql);
@@ -37,7 +37,7 @@
 
             // 로그인을 하면 홈페이지로 돌아간다.
             echo "<script>
-                location.href = '../php/home_t.php';
+                location.href = '/p2/js/web_p2/php/home_t.php';
               </script>";
         }
      }        

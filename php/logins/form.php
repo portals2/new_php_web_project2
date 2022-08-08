@@ -3,7 +3,7 @@
 <head> 
 <meta charset="utf-8">
 <title>로그인</title>
-<link rel="stylesheet" href="/p1/js/web_p2/css/logins.css">
+<link rel="stylesheet" href="/p2/js/web_p2/css/logins.css">
 <script>
     // 안 귀찮으면 닉네임 중복도 구현
    function check_input() {
@@ -52,7 +52,7 @@
 </head>
 <body> 
     <!-- form에서 저장한 데이터들을 POST 형태로 insert에 전달한다. -->
-    <form name="member" action="insert.php" method="post">
+    <form name="member" action="../logins/insert.php" method="post">
 		<h2>회원 가입</h2>
     	<ul class="join_form">
             <li>

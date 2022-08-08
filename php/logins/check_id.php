@@ -15,10 +15,9 @@
       echo("아이디를 입력해 주세요!");
    }
    else {
-      include "check_id.php"
+      include "../logins/db_con.php";
       $sql = "select * from members where id='$id'";
       $result = mysqli_query($con, $sql);
-
       $num_record = mysqli_num_rows($result);
 
       if ($num_record) {

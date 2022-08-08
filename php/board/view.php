@@ -3,7 +3,7 @@
 	$page  = $_GET["page"];
 
 	// $con = mysqli_connect("localhost", "user", "12345", "sample");	// DB 접속
-	include "check_id.php"
+	include "../logins/db_con.php";
 	$sql = "select * from memberboard where num=$num";	// 레코드 검색
 	$result = mysqli_query($con, $sql);			// SQL 명령 실행
 
@@ -28,7 +28,7 @@
 <head> 
 <meta charset="utf-8">
 <title>PHP+MySQL 입문</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="/p2/js/web_p2/css/style.css">
 </head>
 <body> 
 	<h2>회원 게시판 > 내용보기</h2>

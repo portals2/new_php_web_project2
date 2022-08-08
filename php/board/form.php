@@ -1,12 +1,12 @@
 <?php
-		include "../php/board/session.php"; 	// 세션 처리
-?>
+		include "../board/session.php"; 	// 세션 처리
+?> 
 <!DOCTYPE html>
 <html>
 <head> 
 <meta charset="utf-8">
 <title>PHP+MySQL 입문</title>
-<link rel="stylesheet" href="../css/board.css">
+<link rel="stylesheet" href="/p2/js/web_p2/css/board.css">
 <script>
   	function check_input() {	
       	if (!document.board.subject.value) {	// 제목 체크
@@ -26,7 +26,7 @@
 </head>
 <body> 
 	<h2>회원 게시판 > 글쓰기</h2>
-	<form name="board" method="post" action="insert.php"
+	<form name="board" method="post" action="../board/insert.php"
 			enctype="multipart/form-data">
 	    <ul class="board_form">
 			<li>

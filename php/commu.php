@@ -23,7 +23,7 @@
 	else
 		$page = 1;
 
-	$con = mysqli_connect("localhost", "user", "12345", "sample");		// DB 연결
+		$con = mysqli_connect("localhost", "w1004mesmg", "sunmoons1s2s3!", "w1004mesmg");		// DB 연결
 	$sql = "select * from memberboard order by num desc";	// 일련번호 내림차순 검색
 	$result = mysqli_query($con, $sql);			// SQL 명령 실행
 
@@ -65,9 +65,9 @@
 		<a href="../php/commu_d_t.php?num=<?=$num?>&page=<?=$page?>" class="explan">
 	
 			
-				<span class="col1">제목&nbsp;</span>	
-				<span class="col2"><?=$subject?></span>
-				<span class="col3"><?=$name?></span>
+				<span class="col1">제목 :&nbsp;</span>	
+				<span class="col2"><?=$subject?> |&nbsp</span>
+				<span class="col3"><?=$name?> |&nbsp</span>
 				<span class="col4">날자&nbsp;</span>
 				<span class="col5"><?=$regist_day?></span>
 			

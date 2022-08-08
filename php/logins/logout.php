@@ -5,7 +5,7 @@
   
   echo("
        <script>
-          location.href = '../php/home_t.php';
+          location.href = '/p2/js/web_p2/php/home_t.php';
          </script>
        ");
 ?>

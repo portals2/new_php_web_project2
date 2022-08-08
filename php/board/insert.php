@@ -1,5 +1,5 @@
 <?php
-	include "session.php"; 	// 세션 처리
+	include "../board/session.php"; 	// 세션 처리
 
 	if (!$userid) {
 		echo "
@@ -63,7 +63,7 @@
 		$copied_file_name = "";
 	}
 
-    include "check_id.php"
+    include "../logins/db_con.php";
 	$sql = "insert into memberboard (id, name, subject, content, regist_day, ";
 	$sql .= "file_name, file_type, file_copied) ";
 	$sql .= "values('$userid', '$username', '$subject', '$content', '$regist_day', ";
@@ -75,6 +75,6 @@
 
 	// 목록 페이지로 이동
 	echo "<script>
-	    location.href = '../php/commu.php';
+	    location.href = '/p2/js/web_p2/php/commu.php';
 	   </script>";
 ?>

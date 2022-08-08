@@ -3,7 +3,7 @@
 <head> 
 <meta charset="utf-8">
 <title>login</title>
-<link rel="stylesheet" href="/p1/js/web_p2/css/logins.css">
+<link rel="stylesheet" href="/p2/js/web_p2/css/logins.css">
 <script> 
 	function check_input()
 	{
@@ -24,7 +24,7 @@
 </head>
 <body> 
 	<h2 class="login_title">로그인</h2>
-    <form name="login" method="post" action="login.php">		       	
+    <form name="login" method="post" action="../logins/login.php">		       	
         <ul class="login_form">
             <li>
 				<span class="col1">아이디</span>

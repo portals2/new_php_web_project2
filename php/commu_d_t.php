@@ -4,7 +4,7 @@
     $num  = $_GET["num"];
 	$page  = $_GET["page"];
 
-	$con = mysqli_connect("localhost", "user", "12345", "sample");	// DB 접속
+	$con = mysqli_connect("localhost", "w1004mesmg", "sunmoons1s2s3!", "w1004mesmg");	// DB 접속
 	$sql = "select * from memberboard where num=$num";	// 레코드 검색
 	$result = mysqli_query($con, $sql);			// SQL 명령 실행
 
